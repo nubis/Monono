@@ -1,0 +1,38 @@
+name:               Monono
+version:            0.1
+copyright:          (C) 2011 Nubis <nubis@woobiz.com.ar>
+license:            BSD3
+license-file:       LICENSE
+author:             Nubis <nubis@woobiz.com.ar>
+maintainer:         Nubis <nubis@woobiz.com.ar>
+homepage:           http://monono-project.com
+category:           Game
+synopsis:           Cute casual framework for OpenGL interactive graphics.
+description:        
+                    Monono is a multi-platform game framework for simple Games, Visualizations, and GUI applications.
+
+                    It aims to be simple, intuitive and hacker friedly. It's a solution for Haskell lovers that
+                    find themselves going back to Processing, Flash or even Javascript for building
+                    visual interactive programs.
+
+                    Monono means 'cute' in spanish.
+stability:          experimental
+cabal-version:      >= 1.8
+build-type:         Simple
+tested-with:        GHC==7.0.3
+extra-source-files: README.md, examples/events/smiley.bmp
+
+library
+  exposed-modules: Graphics.UI.Monono
+                   Graphics.UI.Monono.Types, Graphics.UI.Monono.Loader, Graphics.UI.Monono.Game
+                   Graphics.UI.Monono.Sprite, Graphics.UI.Monono.Drawing,
+                   Graphics.UI.Monono.Input, Graphics.UI.Monono.Collisions
+
+  build-depends: base == 4.*
+               , OpenGL >= 2.2
+               , GLUT >= 2.1
+               , haskell98
+               , transformers
+               , containers
+               , split
+
