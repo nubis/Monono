@@ -71,6 +71,7 @@ What's pending? A lot! Since this version was developed very naively during a mu
 appreciated part-time break given to me by Max Cantor, my haskeller mentor
 and startup partner.
 
+* Implementation is too naive, sprites still pass the full state around when they could be passing deltas.
 * Performance is not good, although not the main concern, should and could be better.
 * Removing sprites, it's not supported yet.
 * I want to have a way to query sprites as if they were an HTML DOM.

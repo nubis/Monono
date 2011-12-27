@@ -5,7 +5,7 @@ license:            BSD3
 license-file:       LICENSE
 author:             Nubis <nubis@woobiz.com.ar>
 maintainer:         Nubis <nubis@woobiz.com.ar>
-homepage:           http://monono-project.com
+homepage:           http://mononoproject.com
 category:           Game
 synopsis:           Cute casual framework for OpenGL interactive graphics.
 description:        
@@ -15,12 +15,13 @@ description:
                     find themselves going back to Processing, Flash or even Javascript for building
                     visual interactive programs.
 
-                    Monono means 'cute' in spanish.
 stability:          experimental
 cabal-version:      >= 1.8
 build-type:         Simple
 tested-with:        GHC==7.0.3
-extra-source-files: README.md, examples/events/smiley.bmp
+extra-source-files: README.md, LICENSE, examples/bmps_custom_state_animations.hs examples/hits_and_mouse.hs
+                    examples/planet.bmp examples/sun.bmp examples/helloworld.hs
+                    examples/mouse_keys_alpha.hs examples/pong.hs
 
 library
   exposed-modules: Graphics.UI.Monono
@@ -35,4 +36,8 @@ library
                , transformers
                , containers
                , split
+
+source-repository head
+  type: git
+  location: git://github.com/nubis/Monono.git
 
